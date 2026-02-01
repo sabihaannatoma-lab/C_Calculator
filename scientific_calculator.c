@@ -105,7 +105,13 @@ int main() {
             case 11:
                 printf("Enter angle in degrees: ");
                 scanf("%f", &a);
-                printf("Result = %.2f\n", tan(a * M_PI / 180));
+                if (fmod(a, 180) == 90 || fmod(a, 180) == -90) {
+                    printf("Result = Undefined (Infinity)\n");
+                } 
+                else {
+                    printf("Result = %.2f\n", tan(a * M_PI / 180));
+                }
+            
                 break;
 
             default:
@@ -115,6 +121,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
