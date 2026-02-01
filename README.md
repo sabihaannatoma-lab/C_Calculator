@@ -1,6 +1,6 @@
 # Scientific Calculator in C
 
-This is a beginner-friendly scientific calculator project written in C.
+This is a basic calculator project using C language to  demonstrate my understanding of conditional logic,operators , and input/output functions.
 
 ## Features
 - Basic arithmetic operations (Addition, Subtraction, Multiplication, Division)
