@@ -57,38 +57,43 @@ int main() {
                     printf("Division by zero not allowed\n");
                 break;
 
-            case 5:
-                printf("Enter a number: ");
-                scanf("%f", &a);
-                if (a >= 0)
-                    printf("Result = %.2f\n", sqrt(a));
-                else
-                    printf("Invalid input for square root\n");
-                break;
+            // Mathematical functions calculation start
+        case 5:
+            printf("Enter number: ");
+            scanf("%lf", &num1);
+             printf("Result: %.2f", sqrt(num1)); // Calculates Square Root
+             break;
 
-            case 6:
-                printf("Enter base and exponent: ");
-                scanf("%f %f", &a, &b);
-                printf("Result = %.2f\n", pow(a, b));
-                break;
+       case 6:
+             printf("Enter number: ");
+            scanf("%lf", &num1);
+            printf("Result: %.2f", pow(num1, 2)); // Calculates Square of a number
+            break;
+            
+            case 7:
+    printf("Enter a number: ");
+    scanf("%lf", &num1);
+    if (num1 < 0) {
+        printf("Error! Factorial of a negative number doesn't exist.");
+    } else {
+        long long fact = 1;
+        for (int i = 1; i <= (int)num1; i++) {
+            fact *= i;
+        }
+        printf("Result: %lld", fact);
+    }
+    break;
 
+// Trigonometric functions
+      case 8:
+            printf("Enter angle in radians: ");
+            scanf("%lf", &num1);
+            printf("Result: %.2f", sin(num1)); // Calculates Sine value
+             break;
             case 7:
                 printf("Enter a number: ");
                 scanf("%f", &a);
-                if (a > 0)
-                    printf("Result = %.2f\n", log(a));
-                else
-                    printf("Invalid input for ln\n");
-                break;
-
-            case 8:
-                printf("Enter a number: ");
-                scanf("%f", &a);
-                if (a > 0)
-                    printf("Result = %.2f\n", log10(a));
-                else
-                    printf("Invalid input for log10\n");
-                break;
+    
 
             case 9:
                 printf("Enter angle in degrees: ");
@@ -121,6 +126,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
